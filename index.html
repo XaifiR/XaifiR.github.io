@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Huzaifa Rizwan - Amazon Expert</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body {
+      color: white;
+      background: transparent;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .animated-bg, .gradient-layer {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -2;
+    }
+
+    .animated-bg {
+      background: #0f2027;
+      overflow: hidden;
+      z-index: -3;
+    }
+
+    .gradient-layer {
+      background: linear-gradient(120deg, #1f1c2c, #928dab);
+      opacity: 0.5;
+      z-index: -2;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.5rem;
+      color: #ffda77;
+      animation: slideText 5s linear infinite;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #ffda77;
+      width: 20ch;
+    }
+
+    @keyframes slideText {
+      0% { width: 0; }
+      50% { width: 20ch; }
+      100% { width: 0; }
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .section {
+      margin: 2rem;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.07);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: #ffda77;
+      margin-bottom: 1rem;
+    }
+
+    p, li {
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    .profile {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 4px solid #fff;
+      margin-bottom: 1rem;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(-1000px); opacity: 0; }
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05) rotate(1deg);
+    }
+
+    @media(max-width: 768px) {
+      .section {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="animated-bg" id="animated-bg"></div>
+  <div class="gradient-layer"></div>
+
+  <header>
+    <h1>Huzaifa Rizwan</h1>
+    <p>Amazon Growth & PPC Expert</p>
+    <nav>
+      <a href="#profile">Profile</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#education">Education</a>
+      <a href="#interests">Interests</a>
+      <a href="#travel">Travelling</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Profile Section -->
+  <section id="profile" class="section">
+    <img src="ann.jpeg" alt="Profile" class="profile" />
+    <p>
+      A proven Amazon expert with expertise in listings, SEO, A+ content, and PPC.
+      Experienced in international marketplaces (Amazon US, UK, CA). Specialized
+      in optimizing product listings and scaling Amazon brands with growth-focused strategies.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>🧠 Skills & Responsibilities</h2>
+    <ul>
+      <li>Amazon Seller Central Management</li>
+      <li>Amazon PPC & Advertising</li>
+      <li>Inventory and FBA Management</li>
+      <li>Data Analysis & SEO Reporting</li>
+      <li>Customer Service</li>
+      <li>Amazon Policy & Compliance</li>
+    </ul>
+    <h3>🛠️ Daily Work Includes:</h3>
+    <ul>
+      <li>PPC Campaign Optimization</li>
+      <li>Listing Creation and SEO</li>
+      <li>Customer Communication</li>
+      <li>Account Health Monitoring</li>
+      <li>Keyword & Market Research</li>
+      <li>FBA Shipment Management</li>
+    </ul>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <h2>💼 Amazon Brand Experience</h2>
+    <ul>
+      <li><strong>S Raw Science</strong> – Supplements (Fadogia, Vitamins)<br>📈 Sales +50%, ROAS 2.3</li>
+      <li><strong>Saga Beverages</strong> – Supplement shots<br>💵 $390k sales, ROAS 2.5</li>
+      <li><strong>Wakefield Biochar</strong> – Gardening/Soil<br>📦 $420k sales, ROAS 3.4</li>
+      <li><strong>Outdoor Element</strong> – Survival gear<br>⛺ $440k sales, ROAS 3.6</li>
+      <li><strong>Wicked Boxing</strong> – Gloves & Punching Bags<br>🥊 $22k → $60k sales, 15% ACOS</li>
+    </ul>
+  </section>
+
+  <!-- Hobbies Section -->
+  <section id="hobbies" class="section">
+    <h2>🎯 Hobbies & Interests</h2>
+    <ul>
+      <li>Exploring Amazon Trends & Keywords</li>
+      <li>Following eCommerce & Digital Marketing</li>
+      <li>Reading about New SEO Techniques</li>
+      <li>Learning New Tools for Automation</li>
+      <li>Tech & Productivity Enthusiast</li>
+    </ul>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <h2>🎓 Education</h2>
+    <p>Intermediate (Pre-Engineering)<br>Punjab Group of Colleges — 2019<br>Passed with 67%</p>
+  </section>
+
+  <!-- Interests Section -->
+  <section id="interests" class="section">
+    <h2>🔥 Main Interest</h2>
+    <p>I am highly passionate about <strong>Travelling</strong> — it energizes me, inspires creativity, and gives me a deeper understanding of global eCommerce cultures.</p>
+  </section>
+
+  <!-- Travelling Section -->
+  <section id="travel" class="section">
+    <h2>✈️ Travelling Moments</h2>
+    <div class="gallery">
+      <img src="tr.jpeg" alt="Mountains">
+      <img src="tr2.jpeg" alt="ME">
+      
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>📬 Contact Me</h2>
+    <p>Email: <a href="mailto:itsxaifi@gmail.com" style="color: #ffda77;">itsxaifi@gmail.com</a></p>
+    <p>Phone: <a href="tel:+92 319 2140144" style="color: #ffda77;">+92 319 2140144</a></p>
+  </section>
+
+  <!-- BG Bubbles Script -->
+  <script>
+    const bg = document.getElementById("animated-bg");
+    for (let i = 0; i < 25; i++) {
+      const span = document.createElement("span");
+      const size = Math.random() * 20 + 10;
+      span.style.width = size + "px";
+      span.style.height = size + "px";
+      span.style.left = Math.random() * window.innerWidth + "px";
+      span.style.animation = `float ${5 + Math.random() * 15}s linear infinite`;
+      span.style.background = `rgba(255,255,255,0.${Math.floor(Math.random() * 5 + 2)})`;
+      span.style.borderRadius = "50%";
+      span.style.position = "absolute";
+      span.style.bottom = "-50px";
+      bg.appendChild(span);
+    }
+  </script>
+
+</body>
+</html>
